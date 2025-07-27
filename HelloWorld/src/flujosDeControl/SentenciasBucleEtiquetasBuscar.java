@@ -1,0 +1,17 @@
+package flujosDeControl;
+
+public class SentenciasBucleEtiquetasBuscar {
+    public static void main(String[] args) {
+
+        String frase = "tres tristes tigres tragan trigo en un trigal";
+        char letra = 'r';
+        int cantidad = 0;
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) != letra) {
+                continue;
+            }
+            cantidad++;
+        }
+        System.out.println("encontrado " + cantidad + " veces la '" + letra + "'");
+    }
+}
