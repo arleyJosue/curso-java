@@ -18,9 +18,17 @@ public class EjemploStringTestRendimientoConcat {
             sb.append(a).append(b).append("\n"); // 1000 => 0 - 1 ms
         }
 
+        // para liberar espacio, cuando hay muchas instancias - reciclar las que no se utilizan
+        // se ejecuta a muy bajo nivel
+        // se hace de manera automática también
+        System.gc();
+
         long fin = System.currentTimeMillis();
         System.out.println((fin - inicio) + " ms");
-//        System.out.println("c = " + c);
-//        System.out.println("sb = " + sb.toString());
+        System.out.println("c = " + c);
+        System.out.println("sb = " + sb.toString());
+
+        System.exit(0);
     }
+
 }

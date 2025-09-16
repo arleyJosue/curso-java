@@ -19,15 +19,10 @@ public class JavaUtilDateParse {
             System.out.println("format = " + format.format(fecha));
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bb3eb192fc54df504e84b5f24375e36cdf081e81
 //            comparar fecha
             Date fecha2 = new Date();
             System.out.println("fecha2 = " + fecha2);
 
-<<<<<<< HEAD
             if (fecha.after(fecha2)) {
                 System.out.println("fecha del usuario es después o mayor que fecha2");
             } else if (fecha.before(fecha2)) {
@@ -35,42 +30,17 @@ public class JavaUtilDateParse {
             } else if (fecha.equals(fecha2)) {
                 System.out.println("fecha del usuario es igual que fecha2");
             }
-=======
-            if ( fecha.after(fecha2)) {
-                System.out.println("fecha del usuario es después o mayor que fecha2");
-            } else if(fecha.before(fecha2)){
-                System.out.println("fecha del usuario es anterior o menor que fecha2");
-            } else if(fecha.equals(fecha2)){
-                System.out.println("fecha del usuario es igual que fecha2");
-
->>>>>>> bb3eb192fc54df504e84b5f24375e36cdf081e81
-
 //            compareTo
             if (fecha.compareTo(fecha2) > 0) {
                 System.out.println("fecha del usuario es después o mayor que fecha2");
-<<<<<<< HEAD
             } else if (fecha.compareTo(fecha2) < 0) {
                 System.out.println("fecha del usuario es anterior o menor que fecha2");
             } else if (fecha.compareTo(fecha2) == 0) {
-=======
-            } else if(fecha.compareTo(fecha2) < 0){
-                System.out.println("fecha del usuario es anterior o menor que fecha2");
-            } else if(fecha.compareTo(fecha2) == 0){
->>>>>>> bb3eb192fc54df504e84b5f24375e36cdf081e81
                 System.out.println("fecha del usuario es igual que fecha2");
             }
 
-
-<<<<<<< HEAD
             } catch(ParseException e){
                 throw new RuntimeException(e);
             }
     }
 }
-=======
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
-    }
-}
->>>>>>> bb3eb192fc54df504e84b5f24375e36cdf081e81
